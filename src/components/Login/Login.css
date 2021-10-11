@@ -1,0 +1,25 @@
+.login{
+text-align: center;
+}
+.input-field{
+    margin: 10px;
+}
+.input-field label,
+.input-field input{
+    display: block;
+    margin: 0px auto;
+}
+.input-field input{
+    padding: 8px;
+    width: 25%;
+    border: 1px solid rgb(104, 104, 104);
+    border-radius: 4px;
+    font-size: 16px;
+}
+.btn-login{
+    padding: 8px 36px;
+    background-color: orange;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
