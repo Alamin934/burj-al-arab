@@ -18,15 +18,15 @@ const Header = () => {
                         <Link to="/home">Home</Link>
                     </li>
                     <li>
-                        <Link to="/login">Login</Link>
-                    </li>
-                    <li>
                         <Link className="btn-book" to="/book">Book</Link>
                     </li>
-                    <li>
-                        {user.email && <button className="btn-book" onClick={logOUt}>LogOut</button>}
+                    {!user.email ? <li>
+                        <Link to="/login">Login</Link>
                     </li>
-                    <small>{user.displayName}</small>
+                        : <li>
+                            <button className="btn-book" onClick={logOUt}>LogOut</button>
+                        </li>}
+                    <small style={{ color: "white" }}>{user.displayName}</small>
                 </ul>
             </nav>
             <div className="title-container">
